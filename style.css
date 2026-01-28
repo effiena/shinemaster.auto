@@ -1,0 +1,30 @@
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.brand img {
+  width: 200px;
+}
+
+.space {
+  width: 10px;
+  display: inline-block;
+}
+
+.featured-image {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.benefits {
+  list-style: none;
+  padding-left: 0;
+}
+
+.benefits li::before {
+  content: "✔ ";
+  color: #97e4f9;
+}
