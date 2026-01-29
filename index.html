@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 
@@ -20,110 +16,72 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
-				<!-- Intro -->
-					<div id="intro">
-						<!--<span class="shine title-font">SHINEMASTER</span>
-			  	 		<span class="sub">Auto</span>-->
-					<a href="#" style="display:flex; align-items:center; gap:15px;">
- 							 <img src="images/Fresh_Modern_Logo_of_ShineMaster_Auto__1_-removebg-preview.png" 
-   							    style="width:200px;">
-							<!-- <h1 class="shine title-font">ShineMaster Auto</h1>-->
-							<h1 class="title-font letter-shine">
- 								 <span>S</span><span>h</span><span>i</span><span>n</span><span>e</span><span>M</span><span>a</span><span>s</span><span>t</span><span>e</span><span>r</span>
-								  <span>&nbsp;</span><span>A</span><span>u</span><span>t</span><span>o</span>
-								</h1>
-								</a>
-								<p class="sub">POLISHING • COATING • WAXING • WASH</p>
-								<!--/* MAIN TITLE STYLE */-->
+<!-- Intro Section -->
+<div id="intro">
+  <a href="#" style="display:flex; align-items:center; gap:15px;">
+    <img src="images/Fresh_Modern_Logo_of_ShineMaster_Auto__1_-removebg-preview.png" 
+         alt="ShineMaster Auto Logo" 
+         style="width:200px;">
+    <h1 class="title-font letter-shine" aria-label="ShineMaster Auto">
+      <span>S</span><span>h</span><span>i</span><span>n</span><span>e</span>
+      <span>M</span><span>a</span><span>s</span><span>t</span><span>e</span><span>r</span>
+      <span>&nbsp;</span>
+      <span>A</span><span>u</span><span>t</span><span>o</span>
+    </h1>
+  </a>
+  <p class="sub">POLISHING • COATING • WAXING • WASH</p>
+</div>
+
+<!-- CSS (move to style.css) -->
 <style>
-/* ===============================
-   ULTRA LUXURY LETTER SHINE
-   =============================== */
-
-/* MAIN TITLE */
 .title-font {
-    font-size: clamp(1.8rem, 6vw, 3rem);
-    font-weight: 600;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #97e4f9;
-    position: relative;
-    line-height: 1.2;
-    text-align: center;
+  font-size: clamp(1.8rem, 6vw, 3rem);
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #97e4f9;
+  line-height: 1.2;
+  text-align: center;
 }
 
-
-/* LETTER SETUP */
 .letter-shine span {
-    display: inline-block;
-    animation: letterShine 15s ease-in-out infinite;
+  display: inline-block;
+  animation: letterShine 10s ease-in-out infinite;
 }
 
-/* CINEMATIC METALLIC SHINE */
 @keyframes letterShine {
-    0%, 90%, 100% {
-        color: #5af4ec7b;
-        text-shadow: none;
-    }
-
-    45% {
-        color: #b4f899;
-        text-shadow:
-            0 0 6px rgba(200,220,255,0.35),
-            0 0 14px rgba(150,190,255,0.3),
-            0 0 28px rgba(120,170,255,0.25);
-    }
-}
-
-/* HOVER — PREMIUM INTERACTION */
-.title-font:hover span {
+  0%, 90%, 100% { color: #5af4ec7b; text-shadow: none; }
+  45% {
+    color: #b4f899;
     text-shadow:
-        0 0 10px rgba(220,240,255,0.6),
-        0 0 22px rgba(180,210,255,0.4),
-        0 0 40px rgba(140,180,255,0.3);
+      0 0 6px rgba(200,220,255,0.35),
+      0 0 14px rgba(150,190,255,0.3),
+      0 0 28px rgba(120,170,255,0.25);
+  }
 }
 
-/* SUBTEXT */
+.title-font:hover span {
+  text-shadow:
+    0 0 10px rgba(220,240,255,0.6),
+    0 0 22px rgba(180,210,255,0.4),
+    0 0 40px rgba(140,180,255,0.3);
+}
+
 .sub {
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    color: #e3ffa1;
-    margin-top: 10px;
-}
-
-.letter-shine {
-    white-space: normal;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #e3ffa1;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
-
-  /* Stack logo and title */
-  #intro a {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  /* Reduce spacing so letters don’t explode */
-  .title-font {
-    letter-spacing: 1.5px;
-    font-size: 2rem;
-  }
-
-  /* Prevent single-letter line breaks */
-  .letter-shine span {
-    white-space: nowrap;
-  }
-
-  /* Subtext sizing */
-  .sub {
-    font-size: 0.9rem;
-    letter-spacing: 1px;
-    text-align: center;
-  }
+  #intro a { flex-direction: column; gap: 10px; }
+  .title-font { letter-spacing: 1.5px; font-size: 2rem; }
+  .letter-shine span { white-space: nowrap; }
+  .sub { font-size: 0.9rem; letter-spacing: 1px; text-align: center; }
 }
-
-
 </style>
+
 
 							<p>We Restore, We Protect & We Make Sure Your Car Shines Like New
 							</a></p>
@@ -392,4 +350,5 @@ Our skilled polishing specialists use premium compounds, and proven techniques t
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
 </html>
