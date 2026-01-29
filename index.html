@@ -17,14 +17,13 @@
 	</head>
 
 	<body class="is-preload">
- 		 	<span class="shine title-font">SHINEMASTER</span>
-  	 		<span class="sub">Auto</span>
-
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
 				<!-- Intro -->
 					<div id="intro">
+						<!--<span class="shine title-font">SHINEMASTER</span>
+			  	 		<span class="sub">Auto</span>-->
 					<a href="#" style="display:flex; align-items:center; gap:15px;">
  							 <img src="images/Fresh_Modern_Logo_of_ShineMaster_Auto__1_-removebg-preview.png" 
    							    style="width:200px;">
@@ -43,13 +42,16 @@
 
 /* MAIN TITLE */
 .title-font {
-    font-size: clamp(0rem, 5vw, 0rem);
+    font-size: clamp(1.8rem, 6vw, 3rem);
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: #97e4f9;
     position: relative;
+    line-height: 1.2;
+    text-align: center;
 }
+
 
 /* LETTER SETUP */
 .letter-shine span {
@@ -88,6 +90,38 @@
     color: #e3ffa1;
     margin-top: 10px;
 }
+
+.letter-shine {
+    white-space: normal;
+}
+
+@media (max-width: 768px) {
+
+  /* Stack logo and title */
+  #intro a {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Reduce spacing so letters don’t explode */
+  .title-font {
+    letter-spacing: 1.5px;
+    font-size: 2rem;
+  }
+
+  /* Prevent single-letter line breaks */
+  .letter-shine span {
+    white-space: nowrap;
+  }
+
+  /* Subtext sizing */
+  .sub {
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+}
+
 
 </style>
 
