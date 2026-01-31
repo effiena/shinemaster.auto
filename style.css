@@ -94,5 +94,38 @@
   cursor: pointer;
 }
 
+/* WhatsApp Floating Button - Desktop & Mobile */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Icon size */
+.whatsapp-float img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    right: 16px;
+    bottom: 80px; /* lifts above mobile browser bar */
+  }
+
+  .whatsapp-float img {
+    width: 64px;
+    height: 64px;
+  }
+}
+
 </style>
+
 
