@@ -126,6 +126,13 @@
   }
 }
 
+@media (hover: none) {
+  .whatsapp-float img:active {
+    transform: scale(0.92);
+  }
+}
+
 </style>
+
 
 
